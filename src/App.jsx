@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
+import Hero from './Components/Hero';
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/src/ScrollTrigger';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import Lenis from 'lenis'
 
 gsap.registerPlugin(ScrollTrigger);
@@ -18,6 +19,10 @@ const App = () => {
     <main>
       
       <Navbar />
+
+      <Hero />
+
+      {/* <section className='h-dvh w-screen bg-blue-200'/> */}
       
     </main>
   )
