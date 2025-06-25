@@ -24,7 +24,8 @@ const App = () => {
       <Hero />
 
       <Cocktails />      
-      
+
+      {/* <section className='h-dvh w-screen bg-black'/> */}
     </main>
   )
 }

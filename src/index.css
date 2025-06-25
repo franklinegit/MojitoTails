@@ -82,6 +82,17 @@
   .masked-img {
     mask-image: url("/images/mask-img.png");
   }
+
+  .underline-dotted {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: currentColor;
+  }
+  .underline-dashed {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: #e7d393;
+  }
 }
 
 @layer components {
@@ -110,7 +121,7 @@
   }
 
   #hero {
-    @apply relative z-10 h-dvh w-full border border-transparent overflow-hidden;
+    @apply relative z-10 h-dvh w-full border border-transparent;
     /* border: 2px solid lime; */
 
     h1 {
@@ -119,9 +130,16 @@
     }
 
     .hero-leaf {
-      @apply w-1/3 xs:w-1/4 sm:w-1/5 md:w-1/4 xl:w-1/7 h-fit -z-1;
+      @apply w-1/3 xs:w-1/4 sm:w-1/5 md:w-1/5 xl:w-1/7 h-fit -z-1;
+      /* @apply size-[156px] md:size-[320px]; */
     }
   
+  }
+
+  #cocktails {
+    .name {
+      @apply font-modern-negra 2xl:text-3xl text-xl text-yellow;
+    }
   }
 
 }
