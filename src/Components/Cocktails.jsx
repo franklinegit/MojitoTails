@@ -40,7 +40,7 @@ const Cocktails = () => {
 		<img src="/images/cocktail-left-leaf.png" alt="" id='c-left-leaf' className='size-1/3 md:size-fit object-contain absolute left-0 -bottom-20 md:bottom-0'/>
 		<img src="/images/cocktail-right-leaf.png" alt="" id='c-right-leaf' className='size-1/3  md:size-fit object-contain absolute right-0 -bottom-20 md:bottom-0'/>
 
-		<div className="list container mx-auto px-2 md:px-5 z-10 relative flex flex-col md:flex-row justify-between items-start gap-20 pt-40 pb-20">
+		<div className="list container mx-auto px-2 md:px-5 z-10 relative flex flex-col md:flex-row justify-between items-start gap-20 pt-20 md:pt-40 pb-20">
 			<div className="popular space-y-8 w-full md:w-fit">
 				<h2>Most Popular Cocktails</h2>
 

@@ -40,7 +40,7 @@ const Navbar = () => {
 				<ul>
 					{navLinks.map((link) => (
 						<li key={link.id}>
-							<a href={`#${link.id}`}>{link.title}</a>
+							<a href={`#${link.id}`} className='hover:text-white/50 transition-all duration-300'>{link.title}</a>
 						</li>
 					))}
 				</ul>

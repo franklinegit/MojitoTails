@@ -142,4 +142,22 @@
     }
   }
 
+  #about {
+    .img-container {
+      @apply rounded-xl overflow-hidden max-h-72 lg:h-72 relative;
+
+      img {
+        @apply object-cover size-full;
+      }
+    }
+
+    .profiles {
+      @apply bg-[url('/images/noise.png')];
+    }
+
+    .profile {
+      @apply size-8
+    }
+  }
+
 }

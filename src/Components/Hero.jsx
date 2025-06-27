@@ -95,7 +95,7 @@ const Hero = () => {
 						</p>
 					</div>
 
-					<div className='view-cocktails space-y-5 text-center lg:text-start text-lg max-w-md md:max-w-md lg:max-w-2xs'>
+					<div className='view-cocktails space-y-5 text-center lg:text-start text-base lg:text-lg max-w-md md:max-w-md lg:max-w-2xs'>
 						<p className='subtitle mix-blend-difference'>
 							Every cocktail on our menu is a balance of premiun ingredients, creative flair, and timeless recipes
 							- designed to delight your senses.
