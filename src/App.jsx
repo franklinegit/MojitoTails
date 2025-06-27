@@ -26,7 +26,7 @@ const App = () => {
 
       <Cocktails />
 
-      {/* <About /> */}
+      <About />
 
       {/* <section className='h-dvh w-screen bg-black'/> */}
     </main>
