@@ -6,6 +6,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import Lenis from 'lenis'
 import Cocktails from './Components/Cocktails';
 import About from './Components/About';
+import Art from './Components/Art';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,6 +28,8 @@ const App = () => {
       <Cocktails />
 
       <About />
+
+      {/* <Art /> */}
 
       {/* <section className='h-dvh w-screen bg-black'/> */}
     </main>

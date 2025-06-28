@@ -60,7 +60,7 @@ const About = () => {
 
 	return (
 		<section id='about' className=''>
-			<div className='container mx-auto pt-40 px-2 md:px-5 mb-16'>
+			<div className='container mx-auto pt-40 px-2 pb-16'>
 				<div className='content mb-16 flex flex-col gap-10 justify-between md:flex-row'>
 					<div className='flex-1 flex flex-col justify-between gap-5 md:max-w-md'>
 						<p className='px-4 py-2 bg-white text-black w-max rounded-full font-medium'>

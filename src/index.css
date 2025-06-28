@@ -81,6 +81,9 @@
 
   .masked-img {
     mask-image: url("/images/mask-img.png");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 50%;
   }
 
   .underline-dotted {
@@ -158,6 +161,12 @@
     .profile {
       @apply size-8
     }
+  }
+
+  #art {
+    /* h2 {
+      @apply bg-[url('public/images/noise.png')];
+    } */
   }
 
 }

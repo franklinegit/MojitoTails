@@ -86,7 +86,7 @@ const Hero = () => {
 				className='hero-leaf right-leaf absolute right-0 top-1/2 -translate-y-1/3 md:translate-y-[-50%] lg:translate-y-[-60%]' 
 			/>
 
-			<div className="body container mx-auto absolute left-1/2 -translate-x-1/2 top-auto md:top-[42vh] lg:bottom-10 px-2 md:px-5">
+			<div className="body container mx-auto absolute left-1/2 -translate-x-1/2 top-auto md:top-[42vh] lg:bottom-10 px-2">
 				<div className="content flex flex-col lg:flex-row gap-10 w-full justify-between items-center lg:items-end mx-auto size-full">
 					<div className='space-y-5 hidden lg:block max-w-md'>
 						<p className='text-lg'>Cool. Crisp. Classic.</p>
