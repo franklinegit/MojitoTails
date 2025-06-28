@@ -13,6 +13,10 @@ const navLinks = [
 	title: "The Art",
  },
  {
+	id: "menu",
+	title: "Menu",
+ },
+ {
 	id: "contact",
 	title: "Contact",
  },
@@ -135,7 +139,7 @@ const socials = [
  },
 ];
 
-const allCocktails = [
+const cocktailSlides = [
  {
 	id: 1,
 	name: "Classic Mojito",
@@ -180,5 +184,5 @@ export {
  openingHours,
  storeInfo,
  socials,
- allCocktails,
+ cocktailSlides
 };

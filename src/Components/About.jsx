@@ -59,7 +59,7 @@ const About = () => {
 
 
 	return (
-		<section id='about' className=''>
+		<section id='about' className='radial-gradient'>
 			<div className='container mx-auto pt-40 px-2 pb-16'>
 				<div className='content mb-16 flex flex-col gap-10 justify-between md:flex-row'>
 					<div className='flex-1 flex flex-col justify-between gap-5 md:max-w-md'>

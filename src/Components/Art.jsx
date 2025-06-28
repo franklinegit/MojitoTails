@@ -46,7 +46,7 @@ const Art = () => {
 	}, [])
 
 	return (
-		<section id='art' className=' min-h-dvh w-screen py-20 pt-40 md:pb-40'>
+		<section id='art' className='radial-gradient min-h-dvh w-screen py-20 pt-40 md:pb-40'>
 			<div className='pin container mx-auto h-full relative'>
 				<h2 className='fade-out relative text-8xl md:text-[20vw] text-nowrap leading-none font-modern-negra text-center bg-clip-text text-[#505050]'>
 					The Art
@@ -73,7 +73,7 @@ const Art = () => {
 
 						<ul className='space-y-2 md:space-y-4 fade-out self-end md:self-auto text-sm md:text-base'>
 							{featureLists.map((feature, i) => (
-								<li className='flex items-center gap-2 w-fit md:w-60'>
+								<li key={i} className='flex items-center gap-2 w-fit md:w-60'>
 									<img src="/images/check.png" alt="check mark" className='size-4' />
 									<p>{feature}</p>
 								</li>
@@ -81,7 +81,7 @@ const Art = () => {
 						</ul>
 					</div>
 
-					<div className='masked-container mt-4 text-center bg-black'>
+					<div className='masked-container mt-4 text-center'>
 						<h3 className='fade-out text-4xl md:text-5xl font-modern-negra text-center mb-10 text-white mt-10'>
 							Sip Worthy Perfection
 						</h3>
