@@ -83,11 +83,11 @@ const Menu = () => {
 
 	return (
 		<section id='menu' aria-labelledby='menu-heading' className='radial-gradient relative min-h-dvh w-screen py-20 lg:pb-40'>
-			<div id='left-leaf' className='size-30 md:size-40 absolute bottom-0 left-0'>
+			<div id='left-leaf' className='size-30 md:size-50 absolute bottom-0 left-0'>
 				<img src="/images/slider-left-leaf.png" alt="left leaf" />
 			</div>
 
-			<div id='right-leaf' className='size-30 md:size-40 absolute top-0 right-0'>
+			<div id='right-leaf' className='size-30 md:size-50 absolute top-0 right-0'>
 				<img src="/images/slider-right-leaf.png" alt="right leaf" />
 			</div>
 
