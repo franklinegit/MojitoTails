@@ -86,7 +86,7 @@ const Art = () => {
 							Sip Worthy Perfection
 						</h3>
 
-						<div className='masked-content flex flex-col items-center w-full opacity-0 md:px-0 px-5 space-y-5 absolute md:-bottom-20 lg:-bottom-6 bottom-10 left-1/2 -translate-x-1/2'>
+						<div className='masked-content flex flex-col items-center w-full opacity-0 md:px-0 px-5 space-y-5 absolute md:-bottom-20 lg:-bottom-6 bottom-0 left-1/2 -translate-x-1/2'>
 							<h2 className='md:text-5xl text-2xl text-center font-serif font-semibold md:w-full w-80 text-white'>Made with craft, Poured with Passion</h2>
 							<p className='text-lg w-full'>This isn't just a drink. It's a carefully crafted moment made just for you</p>
 						</div>

@@ -21,7 +21,7 @@ const Contact = () => {
 				<h4 className='uppercase font-semibold text-sm text-yellow'>Contact us</h4>
 				<div>
 					<p>(555) 987-6543</p>
-					<p>hello@jsmcocktail.com</p>
+					<p>oddfrankline@gmail.com</p>
 				</div>
 			</div>
 
@@ -45,11 +45,11 @@ const Contact = () => {
 					{socials.map((social) => (
 						<a 
 							href={social.url}
-							target='blank'
-							rel='noreferer'
+							target='_blank'
+							rel='noreferrer noopener'
 							aria-label={social.name}>
 							
-							<img src={social.icon} alt="social icon" className='size-5' />
+							<img src={social.icon} alt={`${social.name}`} className='size-5' />
 						</a>
 					))}
 				</div>
