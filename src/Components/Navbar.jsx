@@ -1,36 +1,59 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import { navLinks } from '../../Constants';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useWindowScroll } from 'react-use';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Navbar = () => {
 
-	useGSAP(() => {
-		const navTween = gsap.timeline({
-			scrollTrigger: {
-				trigger: 'nav',
-				start: 'bottom top',
-				// end: 'bottom top',
-				// toggleActions: 'play none none none'
-			}
-		});
+	const [lastScrollY, setlastScrollY] = useState(0);
+	const [isNavVisible, setisNavVisible] = useState(true);
 
-		navTween.fromTo('nav', {
-			backgroundColor: 'transparent'
-		}, {
-			backgroundColor: '#00000050',
-			backdropFilter: 'blur(10px)',
-			duration: 1,
+	const navRef = useRef();
+
+	const { y: currentScrollY } = useWindowScroll();
+
+	// Track Scroll direction and display nav on scrolling up
+	useEffect(() => {
+
+		if (!navRef.current) return;
+
+		if (currentScrollY === 0) {
+			setisNavVisible(true);
+			navRef.current.classList.remove('blurred-nav');
+		}
+
+		else if (currentScrollY > lastScrollY) {
+			setisNavVisible(false);
+			navRef.current.classList.add('blurred-nav');
+		}
+
+		else if (currentScrollY < lastScrollY) {
+			setisNavVisible(true);
+			navRef.current.classList.add('blurred-nav');
+		}
+
+		setlastScrollY(currentScrollY);
+
+	}, [currentScrollY])
+	
+
+	useGSAP(() => {
+		gsap.to(navRef.current, {
+			y: isNavVisible ? 0 : -100,
+			opacity: isNavVisible ? 1 : 0,
+			duration: .3,
 			ease: 'power1.inOut'
 		});
-	}, []);
+	}, [isNavVisible])
+	
 	
 
 	return (
-		<nav className='fixed'>
+		<nav ref={navRef} className='fixed transition-all duration-300'>
 			<div>
 				<a href="#home" className='flex items-center gap-2'>
 					<img src="/images/logo.png" alt="logo" />

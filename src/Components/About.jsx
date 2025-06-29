@@ -117,7 +117,7 @@ const About = () => {
 						</div>
 
 						<div className='img-container col-span-1 md:col-span-3 lg:col-span-4'>
-							<img src="/images/abt2.png"/>
+							<img src="/images/abt5.png" className='object-top'/>
 						</div>
 
 						<div className='img-container col-span-1 md:col-span-5 lg:col-span-5'>

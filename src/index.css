@@ -119,6 +119,10 @@
     }
   }
 
+  .blurred-nav {
+    @apply bg-black/50 backdrop-blur-[5px];
+  }
+
   .noisy {
     @apply absolute inset-0 size-full bg-[url('/images/noise.png')];
   }
