@@ -9,6 +9,7 @@ import About from './Components/About';
 import Art from './Components/Art';
 import Menu from './Components/Menu';
 import Contact from './Components/Contact';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,6 +37,8 @@ const App = () => {
       <Menu />
 
       <Contact />
+
+      <SpeedInsights />
 
     </main>
   )
