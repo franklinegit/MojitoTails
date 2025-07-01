@@ -10,6 +10,7 @@ import Art from './Components/Art';
 import Menu from './Components/Menu';
 import Contact from './Components/Contact';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from '@vercel/analytics/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
