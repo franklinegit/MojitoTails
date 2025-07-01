@@ -117,7 +117,7 @@ const Menu = () => {
 				</nav>
 
 				<div className='relative flex flex-col justify-between items-center'>
-					<div className='arrows flex items-center justify-between w-full absolute top-60 md:top-40'>
+					<div className='arrows flex items-center justify-between w-full absolute top-60 md:top-40 z-1'>
 						<button className='text-white hover:text-yellow cursor-pointer transition-colors max-w-36' onClick={() => goToSlide(currentIndex - 1)}>
 							<span className='text-3xl font-modern-negra leading-none hidden'>{prevCocktail.name}</span>
 							<img src="/images/right-arrow.png" alt="right arrow" aria-hidden='true' className='size-8'/>
