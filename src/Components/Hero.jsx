@@ -71,7 +71,7 @@ const Hero = () => {
 
   return (
 	<div className=''>
-		<section id="hero" className='noisy'>
+		<section id="hero" className='noisy radial-gradient'>
 			<h1 className='title'>MOJITO</h1>
 
 			<img 
